@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Hotels from "./pages/home/Hotels";
+import Agent from "./pages/agent/Agent";
+import Listing from "./pages/listing/Listing";
+import Pricing from "./pages/pricing/Pricing";
+import NoPage from "./pages/NoPage";
+import Layout from "./pages/Layout";
+import "./index.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Hotels />} />
+          <Route path="/hotels" element={<Hotels />} />
+          <Route path="/" element={<Navigate to="/hotels" replace />}>
+          </Route>
+          <Route path="/agent" element={<Agent />} />
+          <Route path="/listing" element={<Listing />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

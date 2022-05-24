@@ -1,0 +1,5 @@
+.tripform--searchbox__wrap>div {
+   width: 100%;
+   height: 60px;
+   box-sizing: border-box;
+}

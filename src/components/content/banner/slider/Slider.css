@@ -1,0 +1,40 @@
+.main-banner__slide img {
+  height: 100vh;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.slider-idicators {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.slider-idicators button {
+  border: none;
+  outline: none;
+  margin: 4px;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.slider-idicators__active {
+  width: 28px !important;
+  border-radius: 8px !important;
+  transition: width 0.3s ease 0s !important;
+}

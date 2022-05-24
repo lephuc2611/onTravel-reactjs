@@ -1,0 +1,23 @@
+header {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  border-bottom: 0px;
+}
+
+.header-wrapper {
+  max-width: 1920px;
+  min-height: 82px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  transition: all 0.3s ease-out;
+}

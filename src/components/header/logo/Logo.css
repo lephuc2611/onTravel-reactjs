@@ -1,0 +1,27 @@
+.header-logo {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .header-logo a {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   text-decoration: none;
+ }
+ 
+ .header-logo a h3 {
+   text-transform: capitalize;
+   font-size: 20px;
+   font-weight: 700;
+   margin: 0px 0px 0px 10px;
+   -webkit-font-smoothing: antialiased;
+   text-shadow: rgb(0 0 0 / 0%) 1px 1px 1px;
+   -webkit-tap-highlight-color: transparent;
+ }
+ 
+ .header-logo a svg {
+   width: 20px;
+ }
+ 

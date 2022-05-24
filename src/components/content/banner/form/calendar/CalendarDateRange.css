@@ -1,0 +1,112 @@
+.rdrMonthAndYearWrapper,
+.rdrMonths.rdrMonthsVertical {
+  background-color: #fff;
+  display: none;
+}
+
+.rdrCalendarWrapper.rdrDateRangeWrapper {
+  width: 100%;
+  font-size: 13px;
+}
+
+.rdrDateDisplay {
+  margin: unset;
+  height: 60px;
+  margin-left: 30px;
+}
+
+.rdrDateInput > input {
+  height: 60px !important;
+  border: none;
+}
+
+.rdrDateDisplayItemActive {
+  border: unset;
+}
+
+.rdrDateDisplayItem {
+  box-shadow: unset;
+  background-color: transparent;
+  border: unset;
+}
+
+.rdrMonth {
+  width: auto;
+}
+
+.rdrDateDisplayWrapper {
+  background-color: #f7f7f7;
+}
+
+.tripform--date {
+  margin: auto;
+  z-index: 30;
+  width: 100%;
+  position: relative;
+}
+
+.tripform--date::before,
+.tripform--date::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 30px;
+  background-color: rgba(230, 230, 230, 0.705);
+}
+
+.tripform--date::after {
+  right: 0;
+}
+
+.tripform--date input::before {
+  left: 0;
+}
+
+.rdrInRange,
+.rdrStartEdge,
+.rdrEndEdge,
+.rdrDayToday .rdrDayNumber span:after {
+  background-color: #00a699;
+}
+
+.rdrEndEdge,
+.rdrStartEdge,
+.rdrDayStartOfWeek .rdrInRange,
+.rdrDayWeekend .rdrInRange,
+.rdrDayEndOfWeek .rdrInRange,
+.rdrDayEndOfMonth .rdrInRange,
+.rdrDayEndOfMonth .rdrStartEdge,
+.rdrDayEndOfWeek .rdrStartEdge,
+.rdrDayStartOfMonth .rdrEndEdge,
+.rdrDayStartOfWeek .rdrEndEdge {
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+  border: none;
+}
+
+.rdrDayStartPreview,
+.rdrDayEndPreview,
+.rdrDayInPreview {
+  border: #cccccc solid 0.5px !important;
+  border-radius: 0 !important;
+}
+
+.tripform--date>i {
+  padding-left: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 30px;
+}
+
+.rdrDateInput.rdrDateDisplayItem:first-child::after{
+  content: '-';
+  color: #000;
+  position: absolute;
+  top: 30px;
+  transform: translateY(-50%) translateX(22px);
+}

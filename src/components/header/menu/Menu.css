@@ -1,0 +1,85 @@
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-menu ul li {
+  margin-left: 14px;
+  margin-right: 14px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.header-menu__nav ul li a {
+  display: block;
+  padding: 30px 16px;
+  transition: color 0.2s ease-in-out 0s;
+  text-decoration: none;
+}
+
+.header-menu__account {
+  display: flex;
+  margin-left: 30px;
+}
+
+.header-menu__account ul li a {
+  display: flex;
+  transition: color 0.2s ease-in-out 0s;
+  text-decoration: none;
+  min-width: 78px;
+  min-height: 38px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.menu__account--signupBtn {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 132, 137);
+  transition: color 0.2s ease-in-out 0s;
+  border-radius: 3px;
+}
+
+.menu__account--signupBtn:hover {
+  opacity: 0.8;
+  transition: color 0.2s ease 0s;
+}
+
+.whiteColor {
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.blackColor {
+  color: #000;
+  transition: all 0.3s linear;
+}
+
+.blackColor:hover:not(.menuActive) {
+  color: rgb(0, 132, 137);
+  transition: all 0.3s linear;
+}
+
+.header-menu__nav .active {
+  font-weight: 700;
+}
+
+.blackColor.active {
+  color: rgb(0, 132, 137);
+  transition: all 0.2s linear;
+  border-bottom: 3px solid rgb(0, 132, 137);
+}

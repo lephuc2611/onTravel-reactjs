@@ -1,0 +1,25 @@
+.explore-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.explore-heading a {
+  color: rgb(44, 44, 44);
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.explore-heading a:hover {
+  color: rgb(0, 132, 137);
+}
+
+.explore-heading h2 {
+  color: rgb(44, 44, 44);
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}

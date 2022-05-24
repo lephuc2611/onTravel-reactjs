@@ -1,0 +1,127 @@
+.main-banner__tripform {
+  position: absolute;
+  bottom: 80px;
+  width: 80vw;
+  max-width: 1170px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-banner__tripform {
+  background-color: #fff;
+  padding: 28px 30px 30px;
+  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 20px;
+}
+
+.tripform--heading {
+  margin-bottom: 15px;
+  font-size: 28px;
+  line-height: 30px;
+  color: #2c2c2c;
+  font-weight: 700;
+}
+
+.tripform--headingtext {
+  font-size: 15px;
+  color: #2c2c2c;
+}
+
+.tripform--search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  margin-top: 30px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.tripform--search__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tripform--searchbox__wrap {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.tripform--searchbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tripform--btn {
+  min-width: 157px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #2c8589;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 16px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tripform--btn:hover {
+  opacity: 0.85;
+}
+
+.tripform--search input{
+  border: none;
+  outline: none;
+  height: 60px;
+  background: transparent;
+  width: 75%;
+  color: #2c2c2c;
+  font-size: 16px;
+}
+
+.tripform--search input::placeholder {
+  color: #2c2c2c;
+}
+
+.tripform--search svg,
+.tripform--search i {
+  color: #2c8589;
+  font-size: 1.05rem;
+  line-height: 60px;
+}
+
+.tripform--room__popup {
+  display: none;
+}
+
+.tripform--room__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 0 0 5%;
+  padding-right: 5%;
+}
+
+.tripform--room button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 90%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  font-size: 16px;
+}
+
+.tripform--room button svg {
+  color: #2c8589;
+}
