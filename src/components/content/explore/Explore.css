@@ -1,7 +1,65 @@
+a:hover {
+  cursor: pointer;
+}
 .main-explore {
-   max-width: 1920px;
-   min-height: 82px;
-   width: 100%;
-   padding: 32px 25px;
-   margin: 0px auto;
+  max-width: 1920px;
+  min-height: 82px;
+  width: 100%;
+  padding: 32px 75px;
+  margin: 0px auto;
+}
+.contentStyle {
+  height: "160px";
+  color: "#fff";
+  line-height: "160px";
+  text-align: "center";
+  background-color: "#364d79";
+}
+.explore-box-imgage {
+  position: relative;
+  border-radius: 4px;
+  width: 259px;
+  z-index: 1;
+  opacity: 2;
+}
+.explore-box-item {
+  position: absolute;
+  top: calc(50% - 31px);
+  left: calc(50% - 52px);
+  z-index: 2;
+}
+.explore-box-item__title {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  text-shadow: rgb(0 0 0 / 25%) 0px 2px 2px;
+  padding-bottom: 12px;
+}
+.explore-box-item__hotels {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-shadow: rgb(0 0 0 / 25%) 0px 2px 2px;
+}
+.react-multiple-carousel__arrow {
+  background-color: #fff !important;
+}
+.react-multiple-carousel__arrow::before {
+  color: #000;
+  font-weight: 700;
+}
+.react-multiple-carousel__arrow:hover {
+  background-color: #008489 !important;
+  color: #fff;
+}
+.react-multiple-carousel__arrow--left {
+  left: calc(0% + 1px);
+}
+.react-multiple-carousel__arrow--right {
+  right: calc(1% + 1px);
 }
