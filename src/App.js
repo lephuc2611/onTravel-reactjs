@@ -13,6 +13,7 @@ import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import "./index.css";
 import Signin from "./pages/signin/Signin";
+import Signup from "./pages/signup/Signup";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
         <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
+
       </Routes>
     </BrowserRouter>
   );
