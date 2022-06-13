@@ -1,0 +1,220 @@
+a {
+  text-decoration: none !important;
+}
+a:hover,
+button:hover {
+  cursor: pointer !important;
+}
+.main-signin {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-signin-content {
+  flex: 40%;
+  padding: 130px;
+}
+.main-signin-bg {
+  flex: 60%;
+}
+.main-signin-image {
+  flex: 60%;
+  width: 100%;
+  background-image: url(https://tripfinder-redq.firebaseapp.com/static/media/login-page-bg.eea21cfc.jpg);
+  background-position: center center;
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+  width: 57%;
+  top: 0px;
+  right: 0px;
+}
+.main-signin-content__title-welcome {
+  color: rgb(44, 44, 44);
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-top: 58px;
+}
+.main-signin-content__title-required {
+  color: rgb(119, 119, 119);
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 45px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
+.ant-form-item-label > label,
+.ant-form-item-required {
+  display: block;
+  color: rgb(44, 44, 44);
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.ant-input {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 3px;
+  border-color: rgb(230, 230, 230);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-variant: tabular-nums;
+  list-style: none;
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum", "tnum";
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 24px;
+}
+.login-form-forgot {
+  color: rgb(0, 132, 137);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+.ant-checkbox-wrapper > span:last-child {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 700;
+  color: rgb(44, 44, 44);
+  padding: 0px 8px;
+}
+.login-form-button {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 3px;
+  height: 57px;
+  font-size: 17px;
+  font-weight: 700;
+  border-color: rgb(0, 132, 137);
+  background-color: rgb(0, 132, 137);
+  width: 100%;
+  color: #fff;
+  margin: 40px 0;
+  border: none;
+}
+.login-form-button:hover {
+  cursor: pointer;
+  border-color: rgba(0, 132, 137, 0.82);
+  background-color: rgba(0, 132, 137, 0.82);
+}
+.ant-divider-horizontal.ant-divider-with-text {
+  display: flex;
+  display: flex;
+  margin: 16px 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  border-top: 0;
+}
+.ant-divider-horizontal.ant-divider-with-text:before {
+  position: relative;
+  top: 50%;
+  width: 50%;
+  border-top: 1px solid #f0f0f0;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  content: "";
+}
+.ant-divider-horizontal.ant-divider-with-text:after {
+  position: relative;
+  top: 50%;
+  width: 50%;
+  border-top: 1px solid #f0f0f0;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  content: "";
+}
+.ant-divider-inner-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(119, 119, 119);
+  display: inline-block;
+  padding: 0px 8px;
+}
+.flex-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.flex-btn > div {
+  width: 48%;
+}
+.btn-login-or {
+  width: 100%;
+  margin-bottom: 16px;
+  height: 57px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+}
+.btn-facebook {
+  background-color: rgb(59, 89, 152);
+  border-color: rgb(59, 89, 152);
+}
+.btn-github {
+  background-color: rgb(0, 172, 238);
+  border-color: rgb(0, 172, 238);
+}
+.btn-firebase {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+.btn-google {
+  background-color: rgb(221, 75, 57);
+  border-color: rgb(221, 75, 57);
+}
+.main-signin-content__acount {
+  display: block;
+  margin-top: 37px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(119, 119, 119);
+  line-height: 1;
+}
+.main-signin-content__acount > a {
+  color: rgb(0, 132, 137);
+  text-decoration: none;
+  padding-left: 8px;
+}
