@@ -12,6 +12,7 @@ import Pricing from "./pages/pricing/Pricing";
 import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import "./index.css";
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import Signin from "./pages/signin/Signin";
 import Signup from "./pages/signup/Signup";
 
