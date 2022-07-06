@@ -1,0 +1,67 @@
+.main-agent {
+  padding-top: 82px;
+  max-width: 1920px;
+  min-height: 82px;
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+.banner-agent-img {
+  width: 100%;
+  position: relative;
+}
+.banner-agent-avatar {
+  position: absolute;
+  top: 220px;
+  left: 75px;
+  width: 180px;
+  height: 180px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+  margin-bottom: 27px;
+}
+.banner-agent-infomation {
+  padding: 0 75px;
+  margin: 60px auto 0;
+}
+.banner-agent-infomation__name {
+  font-size: 25px;
+  line-height: 28px;
+  font-weight: 700;
+  color: rgb(44, 44, 44);
+  margin-bottom: 23px;
+}
+.banner-agent-infomation__description {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(44, 44, 44);
+  margin-bottom: 30px;
+}
+.banner-agent-infomation__social-list {
+  margin-left: 70%;
+}
+.banner-agent-infomation__social-item {
+  margin-right: 30px;
+}
+.ant-tabs-nav-wrap {
+  padding: 30px 75px 0;
+}
+.ant-tabs-content-holder {
+  padding: 16px 75px 0;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: rgb(0, 132, 137) !important;
+}
+.ant-tabs-tab:hover {
+  color: rgb(0, 132, 137) !important;
+}
+.ant-tabs-ink-bar {
+  position: absolute;
+  background: rgb(0, 132, 137) !important;
+  pointer-events: none;
+}
+.main-tab {
+  
+}
