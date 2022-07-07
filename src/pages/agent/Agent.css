@@ -10,9 +10,13 @@
   width: 100%;
   position: relative;
 }
+.banner-agent {
+  background: url(http://s3.amazonaws.com/redqteam.com/tripfinder-images/coverpic2.png) center center / cover no-repeat;
+  height: 400px;
+}
 .banner-agent-avatar {
   position: absolute;
-  top: 220px;
+  top: 330px;
   left: 75px;
   width: 180px;
   height: 180px;
@@ -62,6 +66,25 @@
   background: rgb(0, 132, 137) !important;
   pointer-events: none;
 }
-.main-tab {
+.contact-title {
+  color: rgb(44, 44, 44);
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.contact-btn-submit {
+  border-radius: 3px;
+  height: 47px;
+  border-color: rgb(0, 132, 137) !important;
+  background-color: rgb(0, 132, 137) !important;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding-left: 28px;
+  padding-right: 28px;
+  line-height: 1;
+}
+.contact-info-box {
   
 }
