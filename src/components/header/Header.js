@@ -18,15 +18,16 @@ export default function Header({ page }) {
       setheaderShadow("rgb(0 0 0 / 10%) 0px 0px 20px");
       setmenuActive(true);
     } else {
-      setnavColor("transparent");
-      setlogoColor("#fff");
-      setmenuColor("whiteColor");
-      setheaderShadow("none");
-      setmenuActive(false);
+      if (page === "home") {
+        setnavColor("transparent");
+        setlogoColor("#fff");
+        setmenuColor("whiteColor");
+        setheaderShadow("none");
+        setmenuActive(false);
+      }
     }
   };
   useEffect(() => {
-    console.log(11111);
     if (page !== "home") {
       setnavColor("#fff");
       setlogoColor("#008489");
