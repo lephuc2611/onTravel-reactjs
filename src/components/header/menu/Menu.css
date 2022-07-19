@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   list-style: none;
+  margin-bottom: 4px;
 }
 
 .header-menu ul li {
@@ -60,17 +61,17 @@
 }
 
 .whiteColor {
-  color: #fff;
+  color: #fff !important;
   transition: all 0.3s linear;
 }
 
 .blackColor {
-  color: #000;
+  color: #000 !important;
   transition: all 0.3s linear;
 }
 
 .blackColor:hover:not(.menuActive) {
-  color: rgb(0, 132, 137);
+  color: rgb(0, 132, 137) !important;
   transition: all 0.3s linear;
 }
 
@@ -79,7 +80,7 @@
 }
 
 .blackColor.active {
-  color: rgb(0, 132, 137);
+  color: rgb(0, 132, 137) !important;
   transition: all 0.2s linear;
   border-bottom: 3px solid rgb(0, 132, 137);
 }

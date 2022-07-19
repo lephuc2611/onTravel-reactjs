@@ -2,5 +2,30 @@
   max-width: 1920px;
   min-height: 82px;
   width: 100%;
-  margin: 0px auto;
+  margin: 85px auto 0px;
+  background-color: #fff;
+}
+.nav-filter {
+  height: 78px;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 85px;
+  border-bottom: 1px solid rgb(230, 230, 230) !important;
+  border-top: 1px solid rgb(230, 230, 230) !important;
+  padding: 0 25px !important;
+  margin-bottom: 30px;
+  width: 100%;
+  z-index: 20;
+  background-color: #fff;
+}
+.btn-filter {
+  position: relative;
+}
+.modal-filter {
+  position: absolute !important;
+  top: 150px !important;
+  left: 25px !important;
+  width: 300px !important;
 }

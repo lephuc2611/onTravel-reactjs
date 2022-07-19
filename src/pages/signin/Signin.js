@@ -4,6 +4,10 @@ import { Button, Checkbox, Form, Input, Col, Row } from "antd";
 import "./Signin.css";
 import Logo from "../../components/header/logo/Logo";
 const Signin = () => {
+  const formItemLayout = {
+    labelCol: { span: 24 },
+    wrapperCol: { span: 24 },
+  };
   return (
     <div className="main-signin">
       <div className="main-signin-content">
@@ -21,6 +25,7 @@ const Signin = () => {
           }}
         >
           <Form.Item
+            {...formItemLayout}
             name={["user", "email"]}
             label="Email"
             rules={[{ type: "email" }]}
@@ -28,6 +33,7 @@ const Signin = () => {
             <Input />
           </Form.Item>
           <Form.Item
+            {...formItemLayout}
             name="password"
             rules={[
               {
@@ -39,7 +45,7 @@ const Signin = () => {
           >
             <Input type="password" placeholder="Password" />
           </Form.Item>
-          <Form.Item>
+          <Form.Item {...formItemLayout}>
             <Row
               style={{
                 display: "flex",
@@ -47,7 +53,12 @@ const Signin = () => {
                 alignItems: "center",
               }}
             >
-              <Form.Item name="remember" valuePropName="checked" noStyle>
+              <Form.Item
+                {...formItemLayout}
+                name="remember"
+                valuePropName="checked"
+                noStyle
+              >
                 <Checkbox>Remember me</Checkbox>
               </Form.Item>
 
@@ -57,7 +68,7 @@ const Signin = () => {
             </Row>
           </Form.Item>
 
-          <Form.Item>
+          <Form.Item {...formItemLayout}>
             <Button
               type="primary"
               htmlType="submit"
@@ -94,7 +105,7 @@ const Signin = () => {
           Don't Have an Account?<a href="/signup">Registration</a>
         </p>
       </div>
-      <div  className="main-signin-bg">
+      <div className="main-signin-bg">
         <div className="main-signin-image"></div>
       </div>
     </div>
