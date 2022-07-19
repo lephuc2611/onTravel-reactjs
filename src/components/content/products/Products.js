@@ -1,8 +1,8 @@
 import React from "react";
-import { Carousel, Col, Row } from "antd";
+import { Button, Carousel, Col, Row } from "antd";
 import { EyeFilled, StarFilled, StarOutlined } from "@ant-design/icons";
 import "./Products.css";
-const Products = ({}) => {
+const Products = ({ loadMore }) => {
   return (
     <div className="content-products">
       <Row span={24} gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 }, 20]}>
@@ -527,6 +527,13 @@ const Products = ({}) => {
           </div>
         </Col>
       </Row>
+      {loadMore && (
+        <div className="btn-loadMore">
+          <Button type="primary" size={"large"}>
+            Load More
+          </Button>
+        </div>
+      )}
     </div>
   );
 };
