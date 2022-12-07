@@ -1,15 +1,15 @@
 import React from "react";
-import { Carousel, Col, Row } from "antd";
+import { Button, Carousel, Col, Row } from "antd";
 import { EyeFilled, StarFilled, StarOutlined } from "@ant-design/icons";
 import "./Products.css";
-const Products = ({}) => {
+const Products = ({ loadMore }) => {
   return (
     <div className="content-products">
-      <Row className="flex" gutter={16}>
-        <Col className="gutter-row" span={6}>
+      <Row span={24} gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 }, 20]}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -58,10 +58,10 @@ const Products = ({}) => {
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -110,10 +110,10 @@ const Products = ({}) => {
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -162,10 +162,10 @@ const Products = ({}) => {
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -214,10 +214,10 @@ const Products = ({}) => {
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -266,10 +266,10 @@ const Products = ({}) => {
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -318,10 +318,10 @@ const Products = ({}) => {
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -370,10 +370,10 @@ const Products = ({}) => {
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -422,10 +422,10 @@ const Products = ({}) => {
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -474,10 +474,10 @@ const Products = ({}) => {
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row">
           <div className="content-products-item">
             <div className="content-products-item-img">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
                   <img
                     className="content-products-item__image"
@@ -527,6 +527,13 @@ const Products = ({}) => {
           </div>
         </Col>
       </Row>
+      {loadMore && (
+        <div className="btn-loadMore">
+          <Button type="primary" size={"large"}>
+            Load More
+          </Button>
+        </div>
+      )}
     </div>
   );
 };

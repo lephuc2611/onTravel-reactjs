@@ -1,8 +1,12 @@
 import React from "react";
-import { Button, Checkbox, Form, Input, Row } from "antd";
+import { Button, Checkbox, Form, Input, Row, Col } from "antd";
 import "../signin/Signin.css";
 import Logo from "../../components/header/logo/Logo";
 const Signup = () => {
+  const formItemLayout = {
+    labelCol: { span: 24 },
+    wrapperCol: { span: 24 },
+  };
   return (
     <div className="main-signin">
       <div className="main-signin-content">
@@ -22,6 +26,7 @@ const Signup = () => {
           }}
         >
           <Form.Item
+            {...formItemLayout}
             name={["user"]}
             label="Username"
             rules={[{ type: "text" }]}
@@ -29,6 +34,7 @@ const Signup = () => {
             <Input />
           </Form.Item>
           <Form.Item
+            {...formItemLayout}
             name={["email"]}
             label="Email"
             rules={[{ type: "email" }]}
@@ -36,6 +42,7 @@ const Signup = () => {
             <Input />
           </Form.Item>
           <Form.Item
+            {...formItemLayout}
             name="password"
             rules={[
               {
@@ -48,6 +55,7 @@ const Signup = () => {
             <Input type="password" placeholder="Password" />
           </Form.Item>
           <Form.Item
+            {...formItemLayout}
             name="password"
             rules={[
               {
@@ -59,7 +67,7 @@ const Signup = () => {
           >
             <Input type="password" placeholder="Password" />
           </Form.Item>
-          <Form.Item>
+          <Form.Item {...formItemLayout}>
             <Row
               style={{
                 display: "flex",
@@ -67,17 +75,22 @@ const Signup = () => {
                 alignItems: "center",
               }}
             >
-              <Form.Item name="remember" valuePropName="checked" noStyle>
-                <Checkbox>Remember me</Checkbox>
-              </Form.Item>
-
-              <Form.Item name="remember" valuePropName="checked" noStyle>
-                <Checkbox>I agree with terms and conditions</Checkbox>
-              </Form.Item>
+              <Row>
+                <Col span={12}>
+                  <Form.Item name="remember" valuePropName="checked" noStyle>
+                    <Checkbox>Remember me</Checkbox>
+                  </Form.Item>
+                </Col>
+                <Col span={12}>
+                  <Form.Item name="remember" valuePropName="checked" noStyle>
+                    <Checkbox>I agree with terms and conditions</Checkbox>
+                  </Form.Item>
+                </Col>
+              </Row>
             </Row>
           </Form.Item>
 
-          <Form.Item>
+          <Form.Item {...formItemLayout}>
             <Button
               type="primary"
               htmlType="submit"
